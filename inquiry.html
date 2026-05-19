@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="img/png" href="img/davnor-logo.png">
+  <title>Travel Inquiry – Visit Davao del Norte</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;900&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="davnor_style/inquire.css">
+
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════
+     NAVBAR
+════════════════════════════════════════════ -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+      <img src="https://enrikkimiguel-debug.github.io/Visit-Davao-del-Norte/img/davnor-logo.png" alt="DavNor Seal" />
+      <div class="brand-title ms-2">
+        Visit Davao del Norte
+        <div class="brand-sub">The Banana Capital of the Philippines</div>
+      </div>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+      <ul class="navbar-nav align-items-lg-center gap-lg-1">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="search.html">Search</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Explore</a>
+          <ul class="dropdown-menu dropdown-menu-scroll">
+            <li><h6 class="dropdown-header">Municipalities</h6></li>
+            <li><a class="dropdown-item" href="asuncion.html">Municipality of Asuncion</a></li>
+            <li><a class="dropdown-item" href="braulio.html">Municipality of Braulio E. Dujali</a></li>
+            <li><a class="dropdown-item" href="carmen.html">Municipality of Carmen</a></li>
+            <li><a class="dropdown-item" href="corella.html">Municipality of New Corella</a></li>
+            <li><a class="dropdown-item" href="kapalong.html">Municipality of Kapalong</a></li>
+            <li><a class="dropdown-item" href="san-isidro.html">Municipality of San Isidro</a></li>
+            <li><a class="dropdown-item" href="sto-tomas.html">Municipality of Santo Tomas</a></li>
+            <li><a class="dropdown-item" href="talaingod.html">Municipality of Talaingod</a></li>
+            <li><hr class="dropdown-divider border-secondary" /></li>
+            <li><h6 class="dropdown-header">Cities</h6></li>
+            <li><a class="dropdown-item" href="panabo.html">City of Panabo</a></li>
+            <li><a class="dropdown-item" href="samal.html">Island Garden City of Samal</a></li>
+            <li><a class="dropdown-item" href="tagum.html">City of Tagum</a></li>
+            <li><hr class="dropdown-divider border-secondary" /></li>
+            <li><h6 class="dropdown-header">Tourism Categories</h6></li>
+            <li><a class="dropdown-item" href="beach.html">Beach Tourism</a></li>
+            <li><a class="dropdown-item" href="festival.html">Festival Tourism</a></li>
+            <li><a class="dropdown-item" href="food.html">Food Tourism</a></li>
+            <li><a class="dropdown-item" href="luxury.html">Luxury Tourism</a></li>
+            <li><a class="dropdown-item" href="mountain.html">Mountain Tourism</a></li>
+            <li><a class="dropdown-item" href="snorkeling.html">Snorkeling</a></li>
+            <li><a class="dropdown-item" href="waterfalls.html">Waterfalls</a></li>
+            <li><a class="dropdown-item" href="wildlife.html">Wildlife Tourism</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="inquiry.html">
+            <i class="bi bi-envelope-fill me-1"></i>Inquire
+          </a>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!-- ═══════════════════════════════════════════
+     PAGE HERO
+════════════════════════════════════════════ -->
+<div class="page-hero">
+  <img src="https://enrikkimiguel-debug.github.io/Visit-Davao-del-Norte/img/davnor-tourism-header.jpg" alt="Travel Inquiry Davao del Norte" />
+  <div class="page-hero-overlay">
+    <div class="container">
+      <div class="breadcrumb-nav">
+        <a href="index.html">Home</a>
+        <span>›</span>
+        Travel Inquiry
+      </div>
+      <h1>Plan Your Trip to<br>Davao del Norte</h1>
+      <p class="hero-sub">Fill out the form below and our team will help you craft the perfect Mindanaoan adventure.</p>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════
+     INQUIRY FORM SECTION
+════════════════════════════════════════════ -->
+<section class="form-section">
+  <div class="container">
+    <div class="row gy-4 align-items-start">
+
+      <!-- ── FORM COLUMN ── -->
+      <div class="col-lg-8">
+        <div class="form-card">
+
+          <p class="section-label">Send Us a Message</p>
+          <h2 class="form-section-title">Travel Inquiry Form</h2>
+          <div class="divider-gold"></div>
+
+          <!-- Success message -->
+          <div class="success-msg" id="successMsg">
+            <i class="bi bi-check-circle-fill"></i>
+            <strong>Thank you for your inquiry!</strong> We've received your message and will get back to you within 1–2 business days.
+          </div>
+
+          <form id="inquiryForm" novalidate>
+
+            <!-- ── Personal Information ── -->
+            <p class="field-group-label"><i class="bi bi-person-fill me-2"></i>Personal Information</p>
+
+            <!-- Full Name -->
+            <div class="row g-3 mb-3">
+              <div class="col-md-12">
+                <label class="form-label" for="fullName">Full Name <span class="req">*</span></label>
+                <input type="text" class="form-control" id="fullName" name="fullName"
+                  placeholder="e.g. Juan dela Cruz" />
+                <div class="field-error" id="err-fullName">
+                  <i class="bi bi-exclamation-circle-fill"></i> Full name is required.
+                </div>
+              </div>
+            </div>
+
+            <!-- Email & Contact -->
+            <div class="row g-3 mb-4">
+              <div class="col-md-6">
+                <label class="form-label" for="email">Email Address <span class="req">*</span></label>
+                <input type="text" class="form-control" id="email" name="email"
+                  placeholder="you@example.com" />
+                <div class="field-error" id="err-email">
+                  <i class="bi bi-exclamation-circle-fill"></i> <span id="err-email-msg">Email address is required.</span>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="contactNumber">Contact Number <span class="req">*</span></label>
+                <input type="text" class="form-control" id="contactNumber" name="contactNumber"
+                  placeholder="+63 9XX XXX XXXX" maxlength="15" />
+                <div class="field-error" id="err-contactNumber">
+                  <i class="bi bi-exclamation-circle-fill"></i> <span id="err-contact-msg">Contact number is required.</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- ── Trip Details ── -->
+            <p class="field-group-label"><i class="bi bi-map-fill me-2"></i>Trip Details</p>
+
+            <!-- Destination -->
+            <div class="row g-3 mb-3">
+              <div class="col-md-12">
+                <label class="form-label" for="destination">Selected Destination <span class="req">*</span></label>
+                <select class="form-select" id="destination" name="destination">
+                  <option value="" disabled selected>— Choose a destination —</option>
+                  <optgroup label="Municipalities">
+                    <option value="Asuncion">Asuncion</option>
+                    <option value="Braulio E. Dujali">Braulio E. Dujali</option>
+                    <option value="Carmen">Carmen</option>
+                    <option value="New Corella">New Corella</option>
+                    <option value="Kapalong">Kapalong</option>
+                    <option value="San Isidro">San Isidro</option>
+                    <option value="Santo Tomas">Santo Tomas</option>
+                    <option value="Talaingod">Talaingod</option>
+                  </optgroup>
+                  <optgroup label="Cities">
+                    <option value="City of Panabo">City of Panabo</option>
+                    <option value="Island Garden City of Samal">Island Garden City of Samal</option>
+                    <option value="City of Tagum">City of Tagum</option>
+                  </optgroup>
+                  <optgroup label="Tourism Experiences">
+                    <option value="Beach Tourism">Beach Tourism</option>
+                    <option value="Festival Tourism">Festival Tourism</option>
+                    <option value="Food Tourism">Food Tourism</option>
+                    <option value="Fruits of Davao">Fruits of Davao</option>
+                    <option value="Luxury Tourism">Luxury Tourism</option>
+                    <option value="Mountain Tourism">Mountain Tourism</option>
+                    <option value="Snorkeling">Snorkeling</option>
+                    <option value="Waterfalls">Waterfalls</option>
+                    <option value="Wildlife Tourism">Wildlife Tourism</option>
+                  </optgroup>
+                  <option value="Multiple / Full Province Tour">Multiple / Full Province Tour</option>
+                </select>
+                <div class="field-error" id="err-destination">
+                  <i class="bi bi-exclamation-circle-fill"></i> Please select a destination.
+                </div>
+              </div>
+            </div>
+
+            <!-- Travel Date & Visitors -->
+            <div class="row g-3 mb-4">
+              <div class="col-md-6">
+                <label class="form-label" for="travelDate">Travel Date <span class="req">*</span></label>
+                <input type="date" class="form-control" id="travelDate" name="travelDate" />
+                <div class="field-error" id="err-travelDate">
+                  <i class="bi bi-exclamation-circle-fill"></i> Please select a travel date.
+                </div>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label" for="numVisitors">Number of Visitors <span class="req">*</span></label>
+                <select class="form-select" id="numVisitors" name="numVisitors">
+                  <option value="" disabled selected>— Select group size —</option>
+                  <option value="1">1 (Solo traveler)</option>
+                  <option value="2">2 (Couple)</option>
+                  <option value="3-5">3–5 (Small group)</option>
+                  <option value="6-10">6–10 (Group)</option>
+                  <option value="11-20">11–20 (Large group)</option>
+                  <option value="21+">21+ (Tour / Event group)</option>
+                </select>
+                <div class="field-error" id="err-numVisitors">
+                  <i class="bi bi-exclamation-circle-fill"></i> Please select at least 1 visitor.
+                </div>
+              </div>
+            </div>
+
+            <!-- ── Message ── -->
+            <p class="field-group-label"><i class="bi bi-chat-left-text-fill me-2"></i>Your Message</p>
+
+            <div class="mb-4">
+              <label class="form-label" for="message">Message / Special Requests <span class="req">*</span></label>
+              <textarea class="form-control" id="message" name="message"
+                placeholder="Tell us about your travel plans, interests, budget range, accommodation preferences, or any specific questions you have about visiting Davao del Norte..."></textarea>
+              <div class="field-error" id="err-message">
+                <i class="bi bi-exclamation-circle-fill"></i> Please enter your message or special requests.
+              </div>
+            </div>
+
+            <div class="mb-4" style="font-size:.8rem; color: var(--text-muted); line-height:1.6;">
+              <i class="bi bi-shield-lock-fill me-1" style="color:var(--green-mid);"></i>
+              Your information is kept private and will only be used to respond to your inquiry. We do not share your data with third parties.
+            </div>
+
+            <button type="submit" class="btn-submit">
+              <i class="bi bi-send-fill"></i> Submit Inquiry
+            </button>
+
+          </form>
+        </div>
+      </div>
+
+      <!-- ── INFO PANEL ── -->
+      <div class="col-lg-4">
+        <div class="info-panel">
+          <h3>Why Visit Davao del Norte?</h3>
+          <div class="info-item">
+            <i class="bi bi-sun-fill"></i>
+            <p><strong>Year-Round Destination</strong>Outside the typhoon belt — enjoy beautiful weather any time of year.</p>
+          </div>
+          <div class="info-item">
+            <i class="bi bi-water"></i>
+            <p><strong>World-Class Beaches</strong>Samal Island's white sand shores and clear waters are among the finest in Southeast Asia.</p>
+          </div>
+          <div class="info-item">
+            <i class="bi bi-tree-fill"></i>
+            <p><strong>Untouched Nature</strong>From mountain forests to river gorges — incredible wilderness awaits explorers.</p>
+          </div>
+          <div class="info-item">
+            <i class="bi bi-person-hearts"></i>
+            <p><strong>Rich Indigenous Culture</strong>Authentic Lumad and Manobo traditions, festivals, and crafts you won't find anywhere else.</p>
+          </div>
+          <div class="info-item">
+            <i class="bi bi-egg-fried"></i>
+            <p><strong>Tropical Food Paradise</strong>Fresh durian, rambutan, exotic fruits, and Mindanaoan flavors straight from the source.</p>
+          </div>
+          <div class="divider-gold-sm"></div>
+          <p style="font-size:.78rem; color:rgba(255,255,255,.65); margin-bottom:.8rem; font-weight:700; letter-spacing:.1em; text-transform:uppercase;">Destinations Available</p>
+          <div class="destination-chips">
+            <span class="destination-chip">Samal Island</span>
+            <span class="destination-chip">Tagum City</span>
+            <span class="destination-chip">Panabo</span>
+            <span class="destination-chip">Talaingod</span>
+            <span class="destination-chip">Kapalong</span>
+            <span class="destination-chip">Asuncion</span>
+            <span class="destination-chip">Beaches</span>
+            <span class="destination-chip">Waterfalls</span>
+            <span class="destination-chip">Wildlife</span>
+            <span class="destination-chip">Festivals</span>
+            <span class="destination-chip">Snorkeling</span>
+            <span class="destination-chip">Luxury</span>
+          </div>
+          <div class="divider-gold-sm"></div>
+          <div class="info-item">
+            <i class="bi bi-facebook"></i>
+            <p>
+              <strong>Follow Us on Facebook</strong>
+              <a href="https://www.facebook.com/share/18HqENqmpT/?mibextid=wwXIfr" target="_blank"
+                style="color:var(--gold-light); text-decoration:none;">Visit Davao del Norte</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /.row -->
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════
+     CTA STRIP
+════════════════════════════════════════════ -->
+<div class="cta-strip">
+  <div class="container">
+    <h2>Explore Davao del Norte</h2>
+    <p>Browse destinations, tourism experiences, and travel inspiration across the province.</p>
+    <a href="index.html" class="btn-back"><i class="bi bi-house-fill me-1"></i> Back to Home</a>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════ -->
+<footer>
+  <p><span>DavNor Travel Guide</span> &nbsp;|&nbsp; Website by: <span>Enrikki Miguel Sagario</span></p>
+  <p style="margin-top:.35rem;">© 2026 Tourism Project &nbsp;·&nbsp; All rights reserved</p>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="js/inquiry.js"></script>
+
+</body>
+</html>

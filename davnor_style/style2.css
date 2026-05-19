@@ -1,0 +1,176 @@
+ :root {
+      --green-deep:  #1a4731;
+      --green-mid:   #2d7a4f;
+      --green-light: #4caf82;
+      --gold:        #c9a84c;
+      --gold-light:  #e8c96a;
+      --cream:       #faf6ef;
+      --dark:        #111a14;
+      --text-muted:  #6b7c6e;
+    }
+ 
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Lato', sans-serif; background: var(--cream); color: var(--dark); }
+ 
+    /* ─── NAVBAR ───────────────────────── */
+    .navbar {
+      background: var(--green-deep) !important;
+      padding: 0.6rem 1.5rem;
+      position: sticky; top: 0; z-index: 1000;
+      box-shadow: 0 2px 12px rgba(0,0,0,.35);
+    }
+    .navbar-brand img { height: 48px; }
+    .navbar-brand .brand-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.15rem; color: var(--gold-light); line-height: 1.2; margin-left: .6rem;
+    }
+    .navbar-brand .brand-sub { font-size: .7rem; color: #a8c4b0; font-weight: 300; letter-spacing: .08em; }
+    .navbar-toggler { border-color: var(--gold); }
+    .navbar-toggler-icon { filter: invert(1); }
+    .nav-link {
+      color: #cde4d5 !important; font-weight: 700; letter-spacing: .04em;
+      font-size: .85rem; text-transform: uppercase; padding: .5rem 1rem !important; transition: color .2s;
+    }
+    .nav-link:hover { color: var(--gold-light) !important; }
+    .dropdown-menu { background: var(--green-deep); border: 1px solid var(--green-mid); }
+    .dropdown-item { color: #cde4d5; font-size: .82rem; }
+    .dropdown-item:hover { background: var(--green-mid); color: #fff; }
+    .nav-item.active .nav-link { color: var(--gold-light) !important; }
+ 
+    /* ─── SCROLLABLE DROPDOWN ────────────────────────────────── */
+    .dropdown-menu-scroll {
+      max-height: 360px;
+      overflow-y: auto;
+      scrollbar-width: thin;
+      scrollbar-color: var(--green-mid) var(--green-deep);
+    }
+    .dropdown-menu-scroll::-webkit-scrollbar { width: 5px; }
+    .dropdown-menu-scroll::-webkit-scrollbar-track { background: var(--green-deep); }
+    .dropdown-menu-scroll::-webkit-scrollbar-thumb { background: var(--green-mid); border-radius: 4px; }
+ 
+    /* ─── PAGE HERO ──────────────────────────────────────────── */
+    .page-hero {
+      position: relative; height: 68vh; min-height: 380px;
+      overflow: hidden; display: flex; align-items: flex-end;
+    }
+    .page-hero img {
+      position: absolute; inset: 0;
+      width: 100%; height: 100%; object-fit: cover; filter: brightness(.55);
+    }
+    .page-hero-overlay {
+      position: relative; z-index: 2; width: 100%;
+      padding: 2.5rem 2rem 3rem;
+      background: linear-gradient(to top, rgba(10,30,15,.8) 0%, transparent 100%);
+    }
+    .breadcrumb-nav {
+      font-size: .75rem; font-weight: 700; letter-spacing: .15em;
+      text-transform: uppercase; color: var(--gold-light); margin-bottom: .8rem;
+    }
+    .breadcrumb-nav a { color: rgba(255,255,255,.6); text-decoration: none; }
+    .breadcrumb-nav a:hover { color: var(--gold-light); }
+    .breadcrumb-nav span { color: var(--gold-light); margin: 0 .4rem; }
+    .page-hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 6vw, 4.2rem); font-weight: 900;
+      color: #fff; line-height: 1.08;
+      text-shadow: 0 4px 24px rgba(0,0,0,.5); margin-bottom: .5rem;
+    }
+    .page-hero .hero-sub {
+      font-size: clamp(.85rem, 1.8vw, 1.05rem);
+      color: rgba(255,255,255,.8); font-weight: 300; max-width: 600px;
+    }
+ 
+    /* ─── SECTION SHARED ─────────────────────────────────────── */
+    section { padding: 72px 0; }
+    .section-label {
+      font-size: .7rem; font-weight: 700; letter-spacing: .3em;
+      text-transform: uppercase; color: var(--green-mid); margin-bottom: .5rem;
+    }
+    .section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+      font-weight: 700; color: var(--green-deep);
+      line-height: 1.15; margin-bottom: 1.1rem;
+    }
+    .divider-gold {
+      width: 52px; height: 3px; background: var(--gold);
+      margin-bottom: 1.4rem; border-radius: 2px;
+    }
+ 
+    /* ─── OVERVIEW ───────────────────────────────────────────── */
+    #overview { background: #fff; }
+    .overview-text p { font-size: .97rem; line-height: 1.85; color: #374b3e; margin-bottom: 1rem; }
+    .stat-chips { display: flex; flex-wrap: wrap; gap: .8rem; margin-bottom: 1.8rem; }
+    .stat-chip {
+      background: var(--cream); border: 1px solid #d9e8dd;
+      border-radius: 999px; padding: .4rem 1rem;
+      font-size: .78rem; color: var(--green-deep);
+      font-weight: 700; display: flex; align-items: center; gap: .4rem;
+    }
+    .stat-chip i { color: var(--green-mid); }
+    .overview-img { border-radius: 6px; overflow: hidden; box-shadow: 0 12px 48px rgba(26,71,49,.2); }
+    .overview-img img { width: 100%; display: block; }
+ 
+    /* ─── CONTENT SECTIONS ───────────────────────────────────── */
+    .content-section { padding: 70px 0; }
+    .content-section:nth-child(even) { background: #fff; }
+    .content-section:nth-child(odd)  { background: var(--cream); }
+    .content-img { border-radius: 6px; overflow: hidden; box-shadow: 0 8px 36px rgba(26,71,49,.18); }
+    .content-img img { width: 100%; display: block; }
+    .content-body .sub-label {
+      font-size: .7rem; font-weight: 700; letter-spacing: .25em;
+      text-transform: uppercase; color: var(--gold); margin-bottom: .35rem;
+    }
+    .content-body h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 700;
+      color: var(--green-deep); line-height: 1.2; margin-bottom: .6rem;
+    }
+    .content-body .divider-gold { margin-bottom: 1rem; }
+    .content-body p { font-size: .96rem; line-height: 1.82; color: #374b3e; margin-bottom: .95rem; }
+ 
+    /* ─── HIGHLIGHT CARDS ────────────────────────────────────── */
+    .highlight-card {
+      background: #fff; border-left: 4px solid var(--green-mid);
+      border-radius: 4px; padding: 1.2rem 1.4rem; height: 100%;
+      transition: border-color .2s, box-shadow .2s;
+    }
+    .highlight-card:hover { border-color: var(--gold); box-shadow: 0 4px 20px rgba(26,71,49,.12); }
+    .highlight-card .hc-icon { font-size: 1.6rem; color: var(--green-mid); margin-bottom: .55rem; }
+    .highlight-card h5 {
+      font-family: 'Playfair Display', serif; font-size: 1rem;
+      font-weight: 700; color: var(--green-deep); margin-bottom: .4rem;
+    }
+    .highlight-card p { font-size: .84rem; color: #4e6557; line-height: 1.65; margin: 0; }
+ 
+    /* ─── CTA STRIP ──────────────────────────────────────────── */
+    .cta-strip { background: var(--gold); padding: 52px 24px; text-align: center; }
+    .cta-strip h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.5rem, 3.5vw, 2.2rem);
+      color: var(--green-deep); font-weight: 700; margin-bottom: .4rem;
+    }
+    .cta-strip p { color: #3a5e46; font-size: .95rem; margin-bottom: 1.4rem; }
+    .btn-back {
+      background: var(--green-deep); color: #fff; font-weight: 700;
+      letter-spacing: .06em; text-transform: uppercase; font-size: .85rem;
+      padding: .75rem 2.2rem; border-radius: 3px; border: none;
+      text-decoration: none; display: inline-block;
+      transition: background .25s; margin: .3rem;
+    }
+    .btn-back:hover { background: var(--green-mid); color: #fff; }
+    .btn-outline-dark-custom {
+      background: transparent; border: 2px solid var(--green-deep);
+      color: var(--green-deep); font-weight: 700; letter-spacing: .06em;
+      text-transform: uppercase; font-size: .85rem; padding: .7rem 2rem;
+      border-radius: 3px; text-decoration: none; display: inline-block;
+      transition: all .25s; margin: .3rem;
+    }
+    .btn-outline-dark-custom:hover { background: var(--green-deep); color: #fff; }
+ 
+    /* ─── FOOTER ─────────────────────────────────────────────── */
+    footer {
+      background: var(--dark); color: #8a9e8f;
+      padding: 28px 24px; text-align: center; font-size: .8rem;
+    }
+    footer span { color: var(--gold-light); }
