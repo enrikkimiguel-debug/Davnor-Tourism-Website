@@ -1,10 +1,3 @@
-/* ═══════════════════════════════════════════════════════════
-   VISIT DAVAO DEL NORTE — Main Stylesheet
-   Covers: variables, navbar, hero carousel, about section,
-           destination cards, filter bar, modal, why-visit,
-           CTA strip, footer, and responsive overrides.
-═══════════════════════════════════════════════════════════ */
-
 /* ─── CSS VARIABLES ──────────────────────────────────────── */
 :root {
   --green-deep:   #1a4731;
@@ -754,6 +747,20 @@ section { padding: 80px 0; }
   color: rgba(255,255,255,.72);
   line-height: 1.7;
   margin: 0;
+}
+/* ═══════════════════════════════════════════════════════════
+   Travel tips
+═══════════════════════════════════════════════════════════ */
+#travel-tips {
+  background: var(--green-deep);
+  color: #fff;
+}
+#travel-tips .section-label { color: var(--gold-light); }
+#travel-tips .section-title { color: #fff; }
+#travel-tips .reason-num {
+  font-size: 1.8rem;
+  color: var(--gold);
+  margin-bottom: .4rem;
 }
 
 
